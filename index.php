@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Auto File Directory Maker</title>
+<title>File Directory List Maker</title>
 
 <meta name="viewport" content="width=device-width">
 
@@ -11,18 +11,18 @@
 
 <body>
 
-<h1>Auto File Directory Maker</h1>
+<h1>File Directory List Maker</h1>
 
 <ul>
 <?php
-if ($handle = opendir('.')) {
-    while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != "..") {
-			echo '<li><a href="/gfx/'.$entry.'">'.$entry.'</a></li>';
+if ($thisFolder = opendir('./folder')) {
+    while (false !== ($thingsInFolder = readdir($thisFolder))) {
+        if ($thisFolder != "." && $thisFolder != ".." && substr($thisFolder,-strlen(".ico")) != ".ico") {
+			echo '<li><a href="/folder/'.$thisFolder.'">'.$thisFolder.'</a></li>';
 			echo "\n";
         }
     }
-    closedir($handle);
+    closedir($gfx);
 }
 ?>
 </ul>
