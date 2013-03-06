@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width">
 
-<link rel="stylesheet" href="http://cienfuegos.co/assets/styles.css">
 </head>
 
 <body>
