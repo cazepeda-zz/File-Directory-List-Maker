@@ -21,7 +21,7 @@ if ($thisFolder = opendir('./folder')) {
 			echo "\n";
         }
     }
-    closedir($gfx);
+    closedir($thisFolder);
 }
 ?>
 </ul>
