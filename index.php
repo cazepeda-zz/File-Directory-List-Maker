@@ -5,7 +5,6 @@
 <title>File Directory List Maker</title>
 
 <meta name="viewport" content="width=device-width">
-
 </head>
 
 <body>
